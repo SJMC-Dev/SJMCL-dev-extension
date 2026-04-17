@@ -22,7 +22,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install --package-lock=false --registry=https://registry.npmjs.org
+        run: npm ci
 
       - name: Compile extension
         run: npm run compile
