@@ -8,7 +8,7 @@ Developer extension for SJMCL workspace, created with ❤️ and 🤖 (Codex).
 cd tools/vscode-extension
 npm install
 npm run compile
- npx vsce package
+npx vsce package
 ```
 
 ## Features
