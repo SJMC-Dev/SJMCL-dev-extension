@@ -31,7 +31,7 @@ jobs:
         run: |
           EXTENSION_NAME="$(node -p "require('./package.json').name")"
           VSIX_NAME="${EXTENSION_NAME}-${GITHUB_REF_NAME}.vsix"
-          npx @vscode/vsce package --out "${VSIX_NAME}"
+          npx vsce package --out "${VSIX_NAME}"
           echo "VSIX_NAME=${VSIX_NAME}" >> "${GITHUB_ENV}"
 
       - name: Upload VSIX artifact
